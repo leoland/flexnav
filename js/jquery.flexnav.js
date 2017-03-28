@@ -117,6 +117,8 @@
       return $thisNav.toggleClass('flexnav-show');
     });
     $('.touch-button').on('click', function(e) {
+    
+      $(this).parent().toggleClass('active');
       var $sub, $touchButton;
       $sub = $(this).parent('.item-with-ul').find('>ul');
       $touchButton = $(this).parent('.item-with-ul').find('>span.touch-button');
